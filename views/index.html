@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+</html lang="en">
+
+
+<head>
+
+    <!--Insert Charset and css Stylesheet-->
+    <meta charset = "UTF-8">
+    <link rel = "stylesheet" href= "style.css" />
+
+    <!--Create title-->
+    <title>Milad Ahmadi Portfolio</title>
+
+    <!--Viewport For Mobile Screens-->
+    <link rel="stylesheet" href ="mobile.css" media="only screen and (max-width: 600px)">
+
+    <!--Viewport For Tablet Screens-->
+    <link rel="stylesheet" href = tablet.css media ="only screen and (min-width: 601px) and (max-width: 768px)">
+
+    <!--Viewport For Laptop/Desktop Screens-->
+    <link rel="stylesheet" href = desktop.css media = "only screen and (min-width: 769px)">
+</head>
+
+
+<!--Start of Body-->
+<body>
+   
+    <!--Give header ID-->
+    <header id="header">
+       
+        <!--Creating Header-->
+        <div class="header container">
+            <div class="navBar">
+       
+                <!--Setting logo as My Name-->
+                <div class="logo">
+                    <h1><span>Milad</span> <span>Ahmadi</span></h1>
+                </div>
+       
+                <!--Creating Nav List for Navigation to Pages-->
+                <nav class="navlist">
+                    <div class="navLines">
+                        <ul>
+       
+                            <!--Home Page Navigation-->
+                            <li>
+                                <a href="#Home" class="navLink scrollto">Home</a>
+                            </li>
+       
+                            <!--About Me Page Navigation-->
+                            <li>
+                                <a href="#About " class="navLink scrollto">About Me</a>
+                            </li>
+       
+                            <!--Project Page Navigation-->
+                            <li>
+                                <a href="#Projects" class="navLink scrollto">Projects</a>
+                            </li>
+       
+                            <!--Contact Me Page Navigation-->
+                            <li>
+                                <a href="#Contacts" class="navLink scrollto">Contact Me</a>
+                            </li>
+       
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+   
+
+
+    <!--Start of Home Page Section-->
+    <section id = "Home">
+        <h1>Welcome to My Portfolio</h1>
+        <a href="#Projects"  class="btn">Projects</a>
+    </section>
+
+
+    <!--Start of About Me Page-->
+    <section id ="About">
+        <div class ="coiRight">
+
+            <!--Header title for About Me Section-->
+            <h1 class = "SectionTitle">About <span>me</span></h1>
+            <div class = "aboutContainer">
+
+                <!--Enter Image of Myself as bitmoji Character-->
+                <div class = "AboutImg">
+                    <img src="bitmoji.png" />
+                </div>
+            </div>
+
+            <!--Insert Header/paragraphs describing stuff about me-->
+            <article>
+                <h1>Milad Ahmadi </h1>
+                <p>I am an Ontario Tech University student studying Networking and IT Security. I am currently enrolled in my second year of my program which I am looking forward to continue striving in. In my free time I enjoy playing video games, I also enjoy learning new things especially new things that can help me earn money. One example of one of these new things I like to learn about is Day Trading, I recently got into Day Trading as I have been interested in this for quite a long time. Im still learning about this field and I hope soon I can become a profitable trader.</p>
+                <p>Get to know me a bit more!</p>
+
+                <!--Adding in video of me with about me poster-->
+                <video width="720" height = "400" controls poster ="aboutme.jpg">
+                    <source src = "VideoMilad.mp4" type="video/mp4">
+                </video>
+            </article>
+        </div>
+    </section>
+
+    <!--Start of Projects Page-->
+    <section id = "Projects">
+        <div class="proj">
+
+            <!--Project Section title-->
+            <h1 class = "SectionTitle">Projects</h1>
+
+            <!--Description of Past Projects-->
+            <article>          
+                <h2>Encryption Decipher Tool <img src="python.png" height="50", width="50"/></h2>
+                <p>A couple of mates and I created a program which can decipher any type of encryption code, me and my group mates each got a clear understanding of how encryptions work and how to easily decipher encryptions. This program was made using python and lead to a better understanding of how the language works </p1>
+            </article>
+            <article>
+                <h2>CryptoMine Network <img src = "cisco.png" height="50", width="70"/></h2>
+                <p>In this project we developed a strategic routing protocol that allows a company that goes by the name of CryptoMine to be able to communcate with its other locations, these locations included Toronto, Los Angeles, Chicago, New York. Due to the different protocols that we used such as OSPF and BGP, this allowed for CryptoMine to be connected to each seperate location. </p2>
+            </article>
+        </div>
+    </section>
+    
+    <!--Start of Contact Me Page-->
+    <section id = "Contacts">
+        <div class ="coiRight"></div>
+
+        <!--title of Section Contact Me-->
+            <h1 class = "SectionTitle">Contact Me</h1>
+
+            <!--Created form with post method and mailto: action -->
+            <form id = "contactFrm" action =mailto:milad.ahmadi@ontariotechu.net Form method = "post">
+                <div class = "form">
+                    <label for = "fName">First Name:</label>
+                    <input type = "text" id = "name" name = "name" placeholder = "Enter your First Name" require minlength="3" maxlength="50">
+                    <label for = "lName">Last Name:</label>
+                    <input type = "text" id = "name" name = "name" placeholder = "Enter your Last Name" require minlength="3" maxlength="50">
+                </div>
+
+
+                <div class = "form">
+                    <label for = "email">Email:</label>
+                    <input type = "email" id = "email" name = "email" placeholder = "Enter your email" required>
+                </div>
+
+
+                <div class = "form">
+                    <label for = "phone"> Cell Number:</label>
+                    <input type = "tel" id = "phone" name = "phone" pattern = "[0-9]{10}" placeholder= "Enter your Phone Number" required>
+                </div>
+
+
+                <div class = "form">
+                    <label for = "message">Message Me:</label>
+                    <textarea id = "message" name = "message" rows = "5" required minlength = "10" placeholder="Enter your Message"></textarea>
+                </div>
+
+
+                <input type = "submit" value = "Submit">
+            </form>
+
+
+        </div>
+    </section>
+
+    <!--Bottom Footer-->
+    <footer>
+        <div class="footerContainer">
+            <p>Contact Email: <a href="mailto:milad.ahmadi@ontariotechu.net">milad.ahmadi@ontariotechu.net</a></p>
+            <p>&copy; 2024 By Milad Ahmadi.</p>
+        </div>
+    </footer>
+    
+   
+</body>
+
+
+
+
+
+
+</html>
+</html>
+
+

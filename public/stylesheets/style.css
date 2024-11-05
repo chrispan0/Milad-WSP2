@@ -1,0 +1,378 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+    background-color: rgb(158, 158, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Styles */
+.navlist ul li {
+    padding: 20px;
+}
+
+.navBar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 2% 0;
+    background-color: rgb(40, 40, 44);
+}
+
+.navlist ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: white; 
+    font-size: 18px;
+}
+
+.navlist a:hover {
+    color: rgb(100, 100, 255); 
+}
+
+/* Home Page Styles */
+#Home {
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(180deg, rgb(40, 40, 44), rgb(100, 100, 255)); 
+    flex-direction: column; 
+}
+
+#Home h1 {
+    font-size: 3rem; 
+    margin-bottom: 1.5rem; 
+}
+
+#Home .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.25rem;
+    background-color: rgb(40, 40, 44); 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#Home .btn:hover {
+    background-color: rgb(0, 0, 141); 
+}
+
+/* About Me Section */
+#About {
+    padding: 10% 5% 5%; 
+    background-color: rgb(100, 100, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#About h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem; 
+}
+
+#About p {
+    font-size: 1.25rem;
+    max-width: 90%; 
+    margin: 0 auto; 
+    line-height: 1.7;
+}
+
+/* Projects Section */
+#Projects {
+    padding: 100px 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(100, 100, 255); 
+    min-height: 100vh;
+}
+
+#Projects h1 {
+    font-size: 48px;
+    margin-bottom: 40px; 
+}
+
+#Projects h2{
+    font-size: 36px;
+}
+
+#Projects p {
+    font-size: 20px;
+
+    /* Limit paragraph width */
+    max-width: 800px; 
+
+    /* Center the text */
+    margin: 0 auto; 
+
+    /*Affects Hieght of spaces in between text lines vertically*/
+    line-height: 1.7; 
+}
+
+/*Start of Contact Me Page */
+/* Contact Me Section */
+#Contacts {
+    padding: 5% 5%;
+    background: linear-gradient(360deg, rgb(40, 40, 44), rgb(100, 100, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Contacts .SectionTitle {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+/* Form Styles */
+#contactFrm {
+    max-width: 80%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+/*Form Group*/
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+/*Form Labels*/
+#contactFrm label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: white;
+}
+
+/*Form Inputs*/
+#contactFrm input[type="text"],
+#contactFrm input[type="email"],
+#contactFrm input[type="tel"],
+#contactFrm textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(40, 40, 44);
+    border-radius: 4px;
+    background-color: white;
+    color: black
+}
+
+/*Input Focus Effect*/
+#contactFrm input:focus,
+
+/*Changing Colour of Text Box When Being Focused On*/
+#contactFrm textarea:focus {
+    outline: none;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Textarea Styles */
+#contactFrm textarea {
+    resize: vertical;
+    height: 130px;
+}
+
+/*Submit Button*/
+#contactFrm input[type="submit"] {
+    background-color: rgb(40, 40, 44);
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+    
+/*Changes colour of button when hovering*/
+#contactFrm input[type="submit"]:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+/* Footer Styles */
+footer {
+
+    /*Background colour of footer*/
+    background-color: rgba(40, 40, 44); 
+
+    /*text colour*/
+    color: white;           
+
+    /*Aligning text in the center*/
+    text-align: center;     
+
+    /*Padding for top and bottom of footer*/
+    padding: 2% 0;       
+
+    /*Positions footer to be at the bottom of the page*/
+    position: relative;     
+
+
+    
+    /*Allows for full width*/
+    width: 100%;           
+}
+
+.footer-container {
+    /*Centers the Footer*/
+    margin: 0 auto;   
+}
+
+footer a {
+    /*Colour of the link*/
+    color: white; 
+
+    /*Removes underlines from links*/
+    text-decoration: none; 
+}
+
+footer a:hover {
+    /*Underlines on hover*/
+    text-decoration: underline; 
+}
+
+/*Start of Design of Different Viewports*/
+
+/*Mobile Screens*/
+
+/*Setting to max 600px*/
+@media only screen and (max-width: 600px){
+    body{
+
+        /*adjusting font for smaller screens*/
+        font-size: 14px;
+    }
+
+    /*Change nav bar from horizontal to vertical*/
+    .navlist ul {
+        flex-direction: column;
+    }
+
+    .navlist ul li {
+        padding: 10px;
+    }
+
+    /*Reduce size of h1 font for smaller screens*/
+    #Home h1 {
+        font-size: 2rem;
+    }
+
+    /*Resize Buttons*/
+    #Home .btn{
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+
+    /*Making Section Titles maller for smaller screens*/
+    #About h1, #Projects h1, #Contacts h1
+    {
+        font-size: 2rem;
+    }
+
+    /*Adjusting contact form*/
+    #contactFrm{
+        padding: 1%;
+    }
+}
+
+/*Start of Tablet Screen*/
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+
+    /*Change Font Size for Tablet Screens*/
+    body{
+        font-size: 16px;
+    }
+
+    .navlist ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navlist ul li {
+        padding: 15px;
+    }
+
+    /*Increase size of headers for tablet screens*/
+    #Home h1{
+        font-size: 2.5rem;
+    }
+    #About h1, #Projects h1, #Contacts h1
+    {
+        font-size: 2.5rem;
+    }
+
+    /*Adjust Form padding*/
+    #contactFrm{
+        padding: 2%;
+    }
+
+}
+
+/*Start of Laptop/Desktop Screen*/
+@media only screen and (min-width: 1025px){
+
+    body{
+        font-size: 18px;
+    }
+
+    .navlist ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navlist ul li{
+        padding: 20px;
+    }
+
+    #Home h1{
+        font-size: 3rem;
+    }
+
+    #About h1, #Projects h1, #Contacts h1
+    {
+        font-size: 3rem;
+    }
+
+    /*Adjusting form*/
+    #contactFrm{
+        padding: 3%;
+        max-width: 50%;
+    }
+}
+
