@@ -1,100 +1,99 @@
 <%- include('header') %>
-    <!--Start of Home Page Section-->
-    <section id = "Home">
+
+<!-- Start of Home Page Section -->
+<section id="Home" class="d-flex align-items-center justify-content-center text-center bg-light" style="height: 100vh;">
+    <div>
         <h1>Welcome to My Portfolio</h1>
-        <a href="#Projects"  class="btn">Projects</a>
-    </section>
+        <a href="#Projects" class="btn btn-primary mt-3">Projects</a>
+    </div>
+</section>
 
+<!-- Start of About Me Page -->
+<section id="About" class="container py-5">
+    <div class="row align-items-center">
+        <!-- Header title for About Me Section -->
+        <h1 class="SectionTitle text-center mb-5">About <span>me</span></h1>
 
-    <!--Start of About Me Page-->
-    <section id ="About">
-        <div class ="coiRight">
-
-            <!--Header title for About Me Section-->
-            <h1 class = "SectionTitle">About <span>me</span></h1>
-            <div class = "aboutContainer">
-
-                <!--Enter Image of Myself as bitmoji Character-->
-                <div class = "AboutImg">
-                    <img src="/images/bitmoji.png" />
-                </div>
-            </div>
-
-            <!--Insert Header/paragraphs describing stuff about me-->
+        <!-- Image and Text -->
+        <div class="col-md-4 text-center mb-4">
+            <!-- Bitmoji Image -->
+            <img src="/images/bitmoji.png" class="img-fluid rounded-circle" alt="Milad Ahmadi">
+        </div>
+        
+        <div class="col-md-8">
             <article>
-                <h1>Milad Ahmadi </h1>
-                <p>I am an Ontario Tech University student studying Networking and IT Security. I am currently enrolled in my second year of my program which I am looking forward to continue striving in. In my free time I enjoy playing video games, I also enjoy learning new things especially new things that can help me earn money. One example of one of these new things I like to learn about is Day Trading, I recently got into Day Trading as I have been interested in this for quite a long time. Im still learning about this field and I hope soon I can become a profitable trader.</p>
+                <h2>Milad Ahmadi</h2>
+                <p>I am an Ontario Tech University student studying Networking and IT Security. Currently in my second year, I am passionate about learning and growing in this field. In my free time, I enjoy video games and exploring new fields, like Day Trading, which I’m currently studying to master.</p>
                 <p>Get to know me a bit more!</p>
-
-                <!--Adding in video of me with about me poster-->
-                <video width="720" height = "400" controls poster ="aboutme.jpg">
-                    <source src = "/images/VideoMilad.mp4" type="video/mp4">
+                
+                <!-- Video with Poster -->
+                <video class="w-100" controls poster="aboutme.jpg">
+                    <source src="/images/VideoMilad.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </article>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!--Start of Projects Page-->
-    <section id = "Projects">
-        <div class="proj">
-
-            <!--Project Section title-->
-            <h1 class = "SectionTitle">Projects</h1>
-
-            <!--Description of Past Projects-->
-            <article>          
-                <h2>Encryption Decipher Tool <img src="/images/python.png" height="50", width="50"/></h2>
-                <p>A couple of mates and I created a program which can decipher any type of encryption code, me and my group mates each got a clear understanding of how encryptions work and how to easily decipher encryptions. This program was made using python and lead to a better understanding of how the language works </p1>
-            </article>
-            <article>
-                <h2>CryptoMine Network <img src = "/images/cisco.png" height="50", width="70"/></h2>
-                <p>In this project we developed a strategic routing protocol that allows a company that goes by the name of CryptoMine to be able to communcate with its other locations, these locations included Toronto, Los Angeles, Chicago, New York. Due to the different protocols that we used such as OSPF and BGP, this allowed for CryptoMine to be connected to each seperate location. </p2>
-            </article>
+<!-- Start of Projects Page -->
+<section id="Projects" class="bg-light py-5">
+    <div class="container">
+        <h1 class="SectionTitle text-center mb-5">Projects</h1>
+        
+        <!-- Project Articles -->
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <article class="p-3 border rounded bg-white">
+                    <h2>Encryption Decipher Tool <img src="/images/python.png" alt="Python Logo" height="50" width="50" /></h2>
+                    <p>This Python program, created by a team and me, deciphers various encryption codes. It was an educational project that enhanced our understanding of encryption mechanisms and the Python language.</p>
+                </article>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <article class="p-3 border rounded bg-white">
+                    <h2>CryptoMine Network <img src="/images/cisco.png" alt="Cisco Logo" height="50" width="70" /></h2>
+                    <p>We developed a routing protocol system for CryptoMine to communicate across locations including Toronto, LA, and NY. Using protocols like OSPF and BGP, we connected all offices for seamless interaction.</p>
+                </article>
+            </div>
         </div>
-    </section>
-    
-    <!--Start of Contact Me Page-->
-    <section id = "Contacts">
-        <div class ="coiRight"></div>
+    </div>
+</section>
 
-        <!--title of Section Contact Me-->
-            <h1 class = "SectionTitle">Contact Me</h1>
+<!-- Start of Contact Me Page -->
+<section id="Contacts" class="container py-5">
+    <h1 class="SectionTitle text-center mb-5">Contact Me</h1>
 
-            <!--Created form with post method and mailto: action -->
-            <form id = "contactFrm" action =mailto:milad.ahmadi@ontariotechu.net Form method = "post">
-                <div class = "form">
-                    <label for = "fName">First Name:</label>
-                    <input type = "text" id = "name" name = "name" placeholder = "Enter your First Name" require minlength="3" maxlength="50">
-                    <label for = "lName">Last Name:</label>
-                    <input type = "text" id = "name" name = "name" placeholder = "Enter your Last Name" require minlength="3" maxlength="50">
-                </div>
-
-
-                <div class = "form">
-                    <label for = "email">Email:</label>
-                    <input type = "email" id = "email" name = "email" placeholder = "Enter your email" required>
-                </div>
-
-
-                <div class = "form">
-                    <label for = "phone"> Cell Number:</label>
-                    <input type = "tel" id = "phone" name = "phone" pattern = "[0-9]{10}" placeholder= "Enter your Phone Number" required>
-                </div>
-
-
-                <div class = "form">
-                    <label for = "message">Message Me:</label>
-                    <textarea id = "message" name = "message" rows = "5" required minlength = "10" placeholder="Enter your Message"></textarea>
-                </div>
-
-
-                <input type = "submit" value = "Submit">
-            </form>
-
-
+    <!-- Contact Form -->
+    <form id="contactFrm" action="mailto:milad.ahmadi@ontariotechu.net" method="post" class="p-4 border rounded bg-light">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="fName" class="form-label">First Name:</label>
+                <input type="text" id="fName" name="fName" class="form-control" placeholder="Enter your First Name" required minlength="3" maxlength="50">
+            </div>
+            <div class="col-md-6">
+                <label for="lName" class="form-label">Last Name:</label>
+                <input type="text" id="lName" name="lName" class="form-control" placeholder="Enter your Last Name" required minlength="3" maxlength="50">
+            </div>
         </div>
-    </section>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Cell Number:</label>
+            <input type="tel" id="phone" name="phone" class="form-control" pattern="[0-9]{10}" placeholder="Enter your Phone Number" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label">Message Me:</label>
+            <textarea id="message" name="message" class="form-control" rows="5" required minlength="10" placeholder="Enter your Message"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+
 <%- include('footer') %>
-
-
-
