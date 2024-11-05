@@ -1,76 +1,4 @@
-<!DOCTYPE html>
-</html lang="en">
-
-
-<head>
-
-    <!--Insert Charset and css Stylesheet-->
-    <meta charset = "UTF-8">
-    <link rel = "stylesheet" href= "style.css" />
-
-    <!--Create title-->
-    <title>Milad Ahmadi Portfolio</title>
-
-    <!--Viewport For Mobile Screens-->
-    <link rel="stylesheet" href ="mobile.css" media="only screen and (max-width: 600px)">
-
-    <!--Viewport For Tablet Screens-->
-    <link rel="stylesheet" href = tablet.css media ="only screen and (min-width: 601px) and (max-width: 768px)">
-
-    <!--Viewport For Laptop/Desktop Screens-->
-    <link rel="stylesheet" href = desktop.css media = "only screen and (min-width: 769px)">
-</head>
-
-
-<!--Start of Body-->
-<body>
-   
-    <!--Give header ID-->
-    <header id="header">
-       
-        <!--Creating Header-->
-        <div class="header container">
-            <div class="navBar">
-       
-                <!--Setting logo as My Name-->
-                <div class="logo">
-                    <h1><span>Milad</span> <span>Ahmadi</span></h1>
-                </div>
-       
-                <!--Creating Nav List for Navigation to Pages-->
-                <nav class="navlist">
-                    <div class="navLines">
-                        <ul>
-       
-                            <!--Home Page Navigation-->
-                            <li>
-                                <a href="#Home" class="navLink scrollto">Home</a>
-                            </li>
-       
-                            <!--About Me Page Navigation-->
-                            <li>
-                                <a href="#About " class="navLink scrollto">About Me</a>
-                            </li>
-       
-                            <!--Project Page Navigation-->
-                            <li>
-                                <a href="#Projects" class="navLink scrollto">Projects</a>
-                            </li>
-       
-                            <!--Contact Me Page Navigation-->
-                            <li>
-                                <a href="#Contacts" class="navLink scrollto">Contact Me</a>
-                            </li>
-       
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-   
-
-
+<%- include('header') %>
     <!--Start of Home Page Section-->
     <section id = "Home">
         <h1>Welcome to My Portfolio</h1>
@@ -166,24 +94,7 @@
 
         </div>
     </section>
+    <%- include('footer') %>
 
-    <!--Bottom Footer-->
-    <footer>
-        <div class="footerContainer">
-            <p>Contact Email: <a href="mailto:milad.ahmadi@ontariotechu.net">milad.ahmadi@ontariotechu.net</a></p>
-            <p>&copy; 2024 By Milad Ahmadi.</p>
-        </div>
-    </footer>
-    
-   
-</body>
-
-
-
-
-
-
-</html>
-</html>
 
 
